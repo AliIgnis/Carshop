@@ -1,0 +1,24 @@
+<section id="testimonials" class="testimonials">
+  <div class="testimonials__container">
+    <h2 class="testimonials__headline" appFadeIn>{{ 'TESTIMONIALS.HEADLINE' | translate }}</h2>
+
+    <div class="testimonials__scroll" appFadeIn>
+      @for (item of testimonials; track item.id) {
+        <article class="testimonials__card">
+          <div class="testimonials__stars"
+               role="img"
+               [attr.aria-label]="('A11Y.STAR_RATING' | translate:{ rating: item.rating, max: maxRating })">
+            {{ getStars(item.rating) }}
+          </div>
+          <blockquote class="testimonials__quote">
+            &ldquo;{{ item.quoteKey | translate }}&rdquo;
+          </blockquote>
+          <div class="testimonials__author">
+            <span class="testimonials__name">{{ item.customerName }}</span>
+            <span class="testimonials__car">{{ item.carModel }}</span>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

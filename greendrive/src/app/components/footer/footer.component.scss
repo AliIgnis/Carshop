@@ -1,0 +1,171 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.footer {
+  background-color: $color-accent;
+  color: $color-white;
+  padding-top: $spacing-3xl;
+
+  &__container {
+    @include container;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-2xl;
+    padding-bottom: $spacing-2xl;
+
+    @include respond-to(md) {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+  }
+
+  &__logo {
+    font-family: $font-family-heading;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    display: block;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__tagline {
+    font-size: $font-size-sm;
+    opacity: 0.8;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__social {
+    display: flex;
+    gap: $spacing-md;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: $color-white;
+    transition: background-color $transition-base;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-white;
+      outline-offset: 2px;
+    }
+  }
+
+  &__heading {
+    font-family: $font-family-body;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__nav-link {
+    font-size: $font-size-sm;
+    color: $color-white;
+    opacity: 0.85;
+    text-decoration: none;
+    transition: opacity $transition-base;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-white;
+      outline-offset: 2px;
+    }
+  }
+
+  &__contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-lg;
+
+    li {
+      font-size: $font-size-sm;
+      opacity: 0.85;
+    }
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+      transition: opacity $transition-base;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: underline;
+      }
+
+      &:focus-visible {
+        outline: 2px solid $color-white;
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  &__lang {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+  }
+
+  &__lang-btn {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $color-white;
+    opacity: 0.7;
+    padding: $spacing-xs $spacing-sm;
+    border-radius: $button-border-radius;
+    transition: opacity $transition-base, background-color $transition-base;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--active {
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-white;
+      outline-offset: 2px;
+    }
+  }
+
+  &__lang-sep {
+    opacity: 0.5;
+    font-size: $font-size-sm;
+    user-select: none;
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: $spacing-lg 0;
+    text-align: center;
+
+    p {
+      font-size: $font-size-sm;
+      opacity: 0.7;
+    }
+  }
+}

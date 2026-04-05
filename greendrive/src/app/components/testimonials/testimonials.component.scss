@@ -1,0 +1,90 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.testimonials {
+  @include section-padding;
+  background-color: $color-background-alt;
+
+  &__container {
+    @include container;
+  }
+
+  &__headline {
+    @include heading;
+    text-align: center;
+    margin-bottom: $spacing-3xl;
+  }
+
+  &__scroll {
+    display: flex;
+    gap: $spacing-xl;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: $spacing-md;
+    -webkit-overflow-scrolling: touch;
+
+    // Hide scrollbar for cleaner look but keep functionality
+    scrollbar-width: thin;
+    scrollbar-color: $color-primary-dark $color-background-alt;
+
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $color-background-alt;
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $color-primary-dark;
+      border-radius: 3px;
+    }
+  }
+
+  &__card {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    background: $color-white;
+    border-radius: $card-border-radius;
+    padding: $spacing-xl;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+    @include respond-to(md) {
+      flex: 0 0 340px;
+    }
+  }
+
+  &__stars {
+    font-size: $font-size-xl;
+    color: #f0a500;
+    margin-bottom: $spacing-md;
+    letter-spacing: 2px;
+  }
+
+  &__quote {
+    font-size: $font-size-base;
+    color: $color-text-secondary;
+    line-height: 1.7;
+    margin-bottom: $spacing-lg;
+    font-style: italic;
+    border: none;
+    padding: 0;
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+  }
+
+  &__name {
+    font-weight: $font-weight-semibold;
+    color: $color-text-primary;
+  }
+
+  &__car {
+    font-size: $font-size-sm;
+    color: $color-text-secondary;
+  }
+}
