@@ -1,0 +1,198 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $navbar-height;
+  z-index: 1000;
+  transition: background-color $transition-base, box-shadow $transition-base;
+
+  &--scrolled {
+    background-color: $color-white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  &__container {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__logo {
+    font-family: $font-family-heading;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    color: $color-accent;
+    text-decoration: none;
+
+    &:focus-visible {
+      outline: 2px solid $color-accent;
+      outline-offset: 2px;
+    }
+  }
+
+  &__links {
+    display: none;
+    align-items: center;
+    gap: $spacing-xl;
+
+    @include respond-to(md) {
+      display: flex;
+    }
+  }
+
+  &__link {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $color-text-secondary;
+    text-decoration: none;
+    padding: $spacing-xs $spacing-sm;
+    border-radius: $button-border-radius;
+    transition: color $transition-base;
+
+    &:hover,
+    &--active {
+      color: $color-accent;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-accent;
+      outline-offset: 2px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+  }
+
+  &__lang {
+    display: none;
+    align-items: center;
+    gap: $spacing-xs;
+
+    @include respond-to(md) {
+      display: flex;
+    }
+  }
+
+  &__lang-btn {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $color-text-secondary;
+    padding: $spacing-xs $spacing-sm;
+    border-radius: $button-border-radius;
+    transition: color $transition-base, background-color $transition-base;
+
+    &:hover {
+      color: $color-accent;
+    }
+
+    &--active {
+      color: $color-accent;
+      background-color: $color-primary-light;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-accent;
+      outline-offset: 2px;
+    }
+  }
+
+  &__lang-sep {
+    color: $color-border;
+    font-size: $font-size-sm;
+    user-select: none;
+  }
+
+  &__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: $color-text-primary;
+    border-radius: $button-border-radius;
+    transition: background-color $transition-base;
+
+    &:hover {
+      background-color: $color-primary-light;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-accent;
+      outline-offset: 2px;
+    }
+
+    @include respond-to(md) {
+      display: none;
+    }
+  }
+
+  // Mobile drawer
+  &__drawer {
+    position: fixed;
+    top: $navbar-height;
+    right: 0;
+    width: 280px;
+    height: calc(100vh - #{$navbar-height});
+    background-color: $color-white;
+    box-shadow: -4px 0 16px rgba(0, 0, 0, 0.08);
+    transform: translateX(100%);
+    transition: transform $transition-base;
+    padding: $spacing-xl;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xl;
+    overflow-y: auto;
+
+    &--open {
+      transform: translateX(0);
+    }
+
+    @include respond-to(md) {
+      display: none;
+    }
+  }
+
+  &__drawer-links {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__drawer-link {
+    display: block;
+    padding: $spacing-sm $spacing-md;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    color: $color-text-secondary;
+    text-decoration: none;
+    border-radius: $button-border-radius;
+    transition: color $transition-base, background-color $transition-base;
+
+    &:hover,
+    &--active {
+      color: $color-accent;
+      background-color: $color-primary-light;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-accent;
+      outline-offset: 2px;
+    }
+  }
+
+  &__drawer-lang {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+    padding: $spacing-sm $spacing-md;
+  }
+}

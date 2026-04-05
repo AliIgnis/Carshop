@@ -1,0 +1,74 @@
+{
+  "NAV": {
+    "ABOUT": "Über uns",
+    "MODELS": "Modelle",
+    "WHY_BYD": "Warum BYD",
+    "TESTIMONIALS": "Kundenstimmen",
+    "CONTACT": "Kontakt"
+  },
+  "HERO": {
+    "HEADLINE": "Die Zukunft des Fahrens ist grün",
+    "SUBHEADLINE": "Entdecken Sie BYD — den weltweit führenden Hersteller von Elektrofahrzeugen. Innovation, Nachhaltigkeit und Leistung in jeder Fahrt.",
+    "CTA": "Modelle entdecken"
+  },
+  "ABOUT": {
+    "HEADLINE": "Warum GreenDrive?",
+    "BODY": "Bei GreenDrive sind wir überzeugt, dass der Umstieg auf Elektromobilität aufregend sein sollte — nicht einschüchternd. Wir präsentieren das gesamte BYD-Sortiment — von kompakten Stadtautos bis hin zu Premium-SUVs — und helfen Ihnen, das perfekte Elektrofahrzeug für Ihren Lebensstil zu finden. Ob Sie zum ersten Mal ein Elektroauto kaufen oder bereits erfahrener Elektrofahrer sind — wir begleiten Sie auf Ihrem Weg.",
+    "CARD_1_TITLE": "Nachhaltige Zukunft",
+    "CARD_1_TEXT": "Jedes BYD-Fahrzeug wird mit Nachhaltigkeit im Kern entwickelt — von der Batterieproduktion bis zum Recycling am Lebensende.",
+    "CARD_2_TITLE": "Blade-Batterie-Technologie",
+    "CARD_2_TEXT": "Die proprietäre Blade-Batterie von BYD setzt den Branchenstandard für Sicherheit und besteht den Nageldurchdringungstest, den herkömmliche Lithium-Ionen-Batterien nicht bestehen.",
+    "CARD_3_TITLE": "Unschlagbares Preis-Leistungs-Verhältnis",
+    "CARD_3_TEXT": "Premium-Ausstattung, modernste Technologie und außergewöhnliche Verarbeitungsqualität — zu einem Preis, der elektrisches Fahren für alle zugänglich macht."
+  },
+  "MODELS": {
+    "HEADLINE": "Unsere Top-Modelle",
+    "RANGE_LABEL": "Reichweite",
+    "ACCELERATION_LABEL": "0-100 km/h",
+    "PRICE_LABEL": "Ab",
+    "DETAILS_CTA": "Mehr erfahren",
+    "ATTO3_TAGLINE": "Der kompakte Crossover, neu gedacht",
+    "SEAL_TAGLINE": "Leistung trifft Eleganz",
+    "DOLPHIN_TAGLINE": "Stadtfahrten, elektrifiziert",
+    "TANG_TAGLINE": "Das Premium-Elektro-SUV",
+    "HAN_TAGLINE": "Luxus, neu definiert",
+    "SEAL_U_TAGLINE": "Platz für die ganze Familie"
+  },
+  "WHY_BYD": {
+    "HEADLINE": "Warum BYD?",
+    "ITEM_1_TITLE": "Weltweiter Nr. 1 EV-Hersteller",
+    "ITEM_1_BODY": "BYD hat Tesla als weltgrößten Elektrofahrzeughersteller nach Verkaufszahlen überholt. Mit jahrzehntelanger Batterie-Expertise und vertikaler Integration kontrolliert BYD die gesamte Lieferkette — von Rohstoffen bis zum fertigen Fahrzeug.",
+    "ITEM_2_TITLE": "Innovation in jedem Detail",
+    "ITEM_2_BODY": "Von der revolutionären Blade-Batterie bis zur hochmodernen e-Platform 3.0 investiert BYD stark in Forschung und Entwicklung. Das Ergebnis: Fahrzeuge, die bei Sicherheitsbewertungen, Effizienz und Fahrdynamik führend sind.",
+    "ITEM_3_TITLE": "Entwickelt für Europa",
+    "ITEM_3_BODY": "In Europa verkaufte BYD-Fahrzeuge erfüllen die höchsten Sicherheits- und Qualitätsstandards. Mit einem wachsenden Netzwerk von Servicezentren und einem umfassenden Garantieprogramm ist der Besitz eines BYD sorgenfrei."
+  },
+  "TESTIMONIALS": {
+    "HEADLINE": "Das sagen unsere Kunden",
+    "MARCUS_QUOTE": "Der Seal hat jede Erwartung übertroffen. Die Beschleunigung ist atemberaubend, und die Reichweite bewältigt meinen täglichen Pendelweg mühelos.",
+    "SOPHIE_QUOTE": "Perfektes Stadtauto. Wendig, effizient, und die Innenraumqualität ist für den Preis überraschend hochwertig.",
+    "THOMAS_QUOTE": "Geräumig, komfortabel und vollgepackt mit Technik. Der drehbare Infotainment-Bildschirm ist ein echter Hingucker.",
+    "ELENA_QUOTE": "Wir brauchten ein Familien-SUV, das keine Kompromisse bei der Nachhaltigkeit macht. Der Tang liefert auf ganzer Linie."
+  },
+  "CONTACT": {
+    "HEADLINE": "Kontaktieren Sie uns",
+    "SUBTEXT": "Interesse an einem BYD-Fahrzeug? Kontaktieren Sie uns direkt.",
+    "EMAIL_LABEL": "E-Mail",
+    "PHONE_LABEL": "Telefon",
+    "LOCATION_LABEL": "Standort",
+    "COUNTRY": "Deutschland",
+    "CTA": "E-Mail senden",
+    "EMAIL_SUBJECT": "BYD-Anfrage — GreenDrive"
+  },
+  "FOOTER": {
+    "TAGLINE": "Ihr Tor zur Elektromobilität",
+    "QUICK_LINKS": "Schnellzugriff",
+    "CONTACT_INFO": "Kontakt",
+    "RIGHTS": "Alle Rechte vorbehalten."
+  },
+  "A11Y": {
+    "LANGUAGE_SWITCHER": "Sprache wechseln",
+    "NAV_TOGGLE": "Navigationsmenü umschalten",
+    "STAR_RATING": "{{rating}} von {{max}} Sternen"
+  }
+}

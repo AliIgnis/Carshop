@@ -1,0 +1,43 @@
+<section id="why-byd" class="why-byd">
+  <div class="why-byd__container">
+    <h2 class="why-byd__headline" appFadeIn>{{ 'WHY_BYD.HEADLINE' | translate }}</h2>
+
+    @for (item of items; track item.titleKey; let i = $index; let odd = $odd) {
+      <div class="why-byd__row" [class.why-byd__row--reversed]="odd" appFadeIn>
+        <div class="why-byd__visual"
+             [style.background]="'linear-gradient(135deg, ' + item.gradientFrom + ', ' + item.gradientTo + ')'">
+          <svg class="why-byd__pattern" aria-hidden="true" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            @if (item.patternType === 'waves') {
+              <defs>
+                <pattern id="pattern-waves" x="0" y="0" width="40" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M0 10 Q10 0 20 10 Q30 20 40 10" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#pattern-waves)"/>
+            }
+            @if (item.patternType === 'circles') {
+              <defs>
+                <pattern id="pattern-circles" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+                  <circle cx="15" cy="15" r="6" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#pattern-circles)"/>
+            }
+            @if (item.patternType === 'diamonds') {
+              <defs>
+                <pattern id="pattern-diamonds" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+                  <polygon points="12,2 22,12 12,22 2,12" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#pattern-diamonds)"/>
+            }
+          </svg>
+        </div>
+        <div class="why-byd__text">
+          <h3 class="why-byd__subtitle">{{ item.titleKey | translate }}</h3>
+          <p class="why-byd__body">{{ item.bodyKey | translate }}</p>
+        </div>
+      </div>
+    }
+  </div>
+</section>

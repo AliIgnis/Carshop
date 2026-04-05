@@ -1,0 +1,74 @@
+{
+  "NAV": {
+    "ABOUT": "About",
+    "MODELS": "Models",
+    "WHY_BYD": "Why BYD",
+    "TESTIMONIALS": "Testimonials",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "HEADLINE": "The Future of Driving is Green",
+    "SUBHEADLINE": "Discover BYD — the world's leading electric vehicle manufacturer. Innovation, sustainability, and performance in every drive.",
+    "CTA": "Explore Models"
+  },
+  "ABOUT": {
+    "HEADLINE": "Why GreenDrive?",
+    "BODY": "At GreenDrive, we believe the transition to electric mobility should be exciting, not intimidating. We showcase BYD's complete lineup — from compact city cars to premium SUVs — helping you find the perfect electric vehicle for your lifestyle. Whether you're a first-time EV buyer or a seasoned electric driver, we're here to guide your journey.",
+    "CARD_1_TITLE": "Sustainable Future",
+    "CARD_1_TEXT": "Every BYD vehicle is designed with sustainability at its core — from battery production to end-of-life recycling.",
+    "CARD_2_TITLE": "Blade Battery Technology",
+    "CARD_2_TEXT": "BYD's proprietary Blade Battery sets the industry standard for safety, passing the nail penetration test that conventional lithium-ion batteries cannot.",
+    "CARD_3_TITLE": "Unmatched Value",
+    "CARD_3_TEXT": "Premium features, cutting-edge technology, and exceptional build quality — all at a price point that makes electric driving accessible."
+  },
+  "MODELS": {
+    "HEADLINE": "Our Featured Models",
+    "RANGE_LABEL": "Range",
+    "ACCELERATION_LABEL": "0-100 km/h",
+    "PRICE_LABEL": "From",
+    "DETAILS_CTA": "Learn More",
+    "ATTO3_TAGLINE": "The Compact Crossover Reimagined",
+    "SEAL_TAGLINE": "Performance Meets Elegance",
+    "DOLPHIN_TAGLINE": "City Driving, Electrified",
+    "TANG_TAGLINE": "The Premium Electric SUV",
+    "HAN_TAGLINE": "Luxury, Redefined",
+    "SEAL_U_TAGLINE": "Space for the Whole Family"
+  },
+  "WHY_BYD": {
+    "HEADLINE": "Why BYD?",
+    "ITEM_1_TITLE": "World's #1 EV Manufacturer",
+    "ITEM_1_BODY": "BYD has surpassed Tesla as the world's largest electric vehicle manufacturer by sales volume. With decades of battery expertise and vertical integration, BYD controls the entire supply chain — from raw materials to finished vehicles.",
+    "ITEM_2_TITLE": "Innovation in Every Detail",
+    "ITEM_2_BODY": "From the revolutionary Blade Battery to the cutting-edge e-Platform 3.0, BYD invests heavily in R&D. The result: vehicles that lead in safety ratings, efficiency, and driving dynamics.",
+    "ITEM_3_TITLE": "Built for Europe",
+    "ITEM_3_BODY": "BYD vehicles sold in Europe meet the highest safety and quality standards. With a growing network of service centers and a comprehensive warranty program, owning a BYD is worry-free."
+  },
+  "TESTIMONIALS": {
+    "HEADLINE": "What Our Customers Say",
+    "MARCUS_QUOTE": "The Seal exceeded every expectation. The acceleration is breathtaking, and the range easily handles my daily commute with plenty to spare.",
+    "SOPHIE_QUOTE": "Perfect city car. Nimble, efficient, and the interior quality is surprisingly premium for the price point.",
+    "THOMAS_QUOTE": "Spacious, comfortable, and packed with tech. The rotating infotainment screen is a real conversation starter.",
+    "ELENA_QUOTE": "We needed a family SUV that didn't compromise on sustainability. The Tang delivers on every front."
+  },
+  "CONTACT": {
+    "HEADLINE": "Get in Touch",
+    "SUBTEXT": "Interested in a BYD vehicle? Reach out to us directly.",
+    "EMAIL_LABEL": "Email",
+    "PHONE_LABEL": "Phone",
+    "LOCATION_LABEL": "Location",
+    "COUNTRY": "Germany",
+    "CTA": "Email Us",
+    "EMAIL_SUBJECT": "BYD Inquiry — GreenDrive"
+  },
+  "FOOTER": {
+    "TAGLINE": "Your gateway to electric mobility",
+    "QUICK_LINKS": "Quick Links",
+    "CONTACT_INFO": "Contact",
+    "RIGHTS": "All rights reserved."
+  },
+  "A11Y": {
+    "LANGUAGE_SWITCHER": "Switch language",
+    "NAV_TOGGLE": "Toggle navigation menu",
+    "STAR_RATING": "{{rating}} out of {{max}} stars"
+  }
+}

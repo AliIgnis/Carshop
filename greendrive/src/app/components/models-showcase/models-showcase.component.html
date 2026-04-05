@@ -1,0 +1,35 @@
+<section id="models" class="models">
+  <div class="models__container">
+    <h2 class="models__headline" appFadeIn>{{ 'MODELS.HEADLINE' | translate }}</h2>
+
+    <div class="models__grid">
+      @for (model of models; track model.id) {
+        <article class="models__card" appFadeIn>
+          <div class="models__card-image"
+               [style.background]="'linear-gradient(135deg, ' + model.gradientFrom + ', ' + model.gradientTo + ')'">
+            <span class="models__card-name-overlay">{{ model.nameKey }}</span>
+          </div>
+          <div class="models__card-body">
+            <h3 class="models__card-title">{{ model.nameKey }}</h3>
+            <p class="models__card-tagline">{{ model.taglineKey | translate }}</p>
+            <div class="models__card-specs">
+              <div class="models__spec">
+                <span class="models__spec-label">{{ 'MODELS.RANGE_LABEL' | translate }}</span>
+                <span class="models__spec-value">{{ model.rangeKm }} km</span>
+              </div>
+              <div class="models__spec">
+                <span class="models__spec-label">{{ 'MODELS.ACCELERATION_LABEL' | translate }}</span>
+                <span class="models__spec-value">{{ model.accelerationSeconds }}s</span>
+              </div>
+              <div class="models__spec">
+                <span class="models__spec-label">{{ 'MODELS.PRICE_LABEL' | translate }}</span>
+                <span class="models__spec-value">{{ formatPrice(model.priceEur) }}</span>
+              </div>
+            </div>
+            <button class="models__card-cta">{{ 'MODELS.DETAILS_CTA' | translate }}</button>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>
